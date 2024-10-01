@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "363046703438",
+    "firebase_url": "https://mauicrud-b5391-default-rtdb.firebaseio.com",
+    "project_id": "mauicrud-b5391",
+    "storage_bucket": "mauicrud-b5391.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363046703438:android:46ad032f245fc9d73e0e1f",
+        "android_client_info": {
+          "package_name": "mauifirebase.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQAK0h5r_otBDQ9eVd12c6UwsFZC1HEs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

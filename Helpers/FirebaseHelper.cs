@@ -14,7 +14,7 @@ namespace MauiSeminario.Helpers
         private readonly FirebaseClient firebaseClient;
         public FirebaseHelper()
         {
-            firebaseClient = new FirebaseClient("Ruta Firebase Pendiente");
+            firebaseClient = new FirebaseClient("https://mauicrud-b5391-default-rtdb.firebaseio.com/");
         }
         public async Task<List<Producto>> GetAllProductos()
         {

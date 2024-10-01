@@ -1,4 +1,4 @@
-﻿namespace MauiSeminario
+﻿namespace MauiSeminario.Views
 {
     public partial class MainPage : ContentPage
     {
@@ -9,16 +9,17 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnAddProductClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            await Navigation.PushAsync(new AddProductPage());
+        }
+        private async void OnSearchProductClicked(object sender, EventArgs e)
+        {
+            //await Navigation.PushAsync(new SearchProductPage());
+        }
+        private async void OnListProductClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListProductPage());
         }
     }
 

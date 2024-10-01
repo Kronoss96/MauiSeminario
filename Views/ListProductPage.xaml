@@ -33,8 +33,8 @@
                 <DataTemplate>
                     <ViewCell>
                         <Grid ColumnDefinitions="*,*,Auto" Padding="10" HorizontalOptions="FillAndExpand">
-                            <Label Text="{Binding Nombre}" Grid.Column="{StaticResource LabelStyle}"/>
-                            <Label Text="{Binding Precio}" Grid.Column="{StaticResource LabelStyle}"/>
+                            <Label Text="{Binding Nombre}" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+                            <Label Text="{Binding Precio}" Grid.Column="1" Style="{StaticResource LabelStyle}"/>
                             <StackLayout Orientation="Horizontal" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
                                 <Button Text="Editar" Clicked="OnEditProductClicked" Style="{StaticResource ButtonStyle}"/>
                                 <Button Text="Eliminar" Clicked="OnDeleteProductClicked" Style="{StaticResource ButtonStyle}"/>
