@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:363046703438:android:46ad032f245fc9d73e0e1f",
+        "mobilesdk_app_id": "1:363046703438:android:5952c06feed336723e0e1f",
         "android_client_info": {
-          "package_name": "mauifirebase.com"
+          "package_name": "netmaui.com"
         }
       },
       "oauth_client": [],

@@ -31,14 +31,23 @@ namespace MauiSeminario.Helpers
         }
         public async Task AddProducto(Producto producto)
         {
+            // Crea un nuevo objeto Producto sin Id
+            var newProducto = new Producto
+            {
+                Nombre = producto.Nombre,
+                Descripcion = producto.Descripcion,
+                Precio = producto.Precio
+            };
+
             await firebaseClient
                 .Child("Productos")
-                .PostAsync(producto);
+                .PostAsync(newProducto);
         }
         public async Task UpdateProducto(string key, Producto producto)
         {
             await firebaseClient
                 .Child("Productos")
+                .Child(key)
                 .PutAsync(producto);
         }
         public async Task DeleteProducto(string key) 

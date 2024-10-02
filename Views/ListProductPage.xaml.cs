@@ -9,7 +9,7 @@ public partial class ListProductPage : ContentPage
     public ListProductPage()
     {
         InitializeComponent();
-        LoadProducts();  // Invocación del método para cargar los productos
+        LoadProducts(); 
     }
 
     private async void LoadProducts()
